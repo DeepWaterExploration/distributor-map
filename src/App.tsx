@@ -6,7 +6,7 @@ function App() {
   return (
     <CssBaseline>
       <div
-      id="APP DIV"
+        id="APP DIV"
         style={{
           width: "100%",
           height: "100vh",
@@ -17,7 +17,7 @@ function App() {
           paddingBottom: "60px",
           paddingRight: "10px",
           paddingLeft: "10px",
-          background: "#EEE"
+          background: "#EEE",
         }}
       >
         <HomePage />

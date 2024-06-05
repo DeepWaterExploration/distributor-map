@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 import L, { LatLngExpression } from "leaflet";
 import distributors from "../../assets/distributors.json";
 import 'leaflet/dist/leaflet.css';
-import './no-leaflet.css';
+import './no-leaflet.css'; //hide leaflet logo
 const CENTER: LatLngExpression = [0, 0];
 
 
@@ -13,7 +13,7 @@ const ComponentResize = () => {
   const map = useMap()
 
   setTimeout(() => {
-      map.invalidateSize()
+      map.invalidateSize()  //bugfix to make sure that all map tiles load onstart
   }, 0)
 
   return null
@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
     iconUrl: "https://unpkg.com/leaflet@1.0.3/dist/images/marker-icon.png",
     iconSize: [25,41],
     iconAnchor: [12, 41]
-  })
+  })  // use custom icon, otherwise it doesn't show at build
 
 
 
@@ -44,10 +44,8 @@ const HomePage: React.FC = () => {
           attribution="OpenStreetMap"
           url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png"
         />
-
-        
-        {distributors.features.map(element => {
-              const coordinates = element.geometry.coordinates;
+        {distributors.map(element => {
+              const coordinates = element.coordinates;
               let position = [0, 0] as LatLngExpression; // Default position in case extraction fails
           
               if (Array.isArray(coordinates) && coordinates.length >= 2) {
@@ -58,16 +56,13 @@ const HomePage: React.FC = () => {
               }
 
           return (
-          <Marker key={element.properties.name} position={position} icon={icon}>
+          <Marker key={element.name} position={position} icon={icon}>
                   <Popup>
-                    <a href={element.properties.website}>{element.properties.name}</a>
+                    <a href={element.website}>{element.name}</a>
                     <br />
-                    {element.properties.address}
-                    <br />
-                    
-                    {element.properties.email!==""?<a href={"mailto:"+element.properties.email}>{element.properties.email}</a>:""}
-                    <br />
-                    {element.properties.phone!==""?<a href={"tel:"+element.properties.phone}>{element.properties.phone}</a>:""}
+                    {element.address}                        
+                    {element.email!==""?<><br /><a href={"mailto:"+element.email}>{element.email}</a></>:""}
+                    {element.phone!==""?<><br /><a href={"tel:"+element.phone}>{element.phone}</a></>:""}
                   </Popup>
           </Marker>);
         })}

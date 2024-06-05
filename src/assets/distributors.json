@@ -1,160 +1,90 @@
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-83.875450, 42.341390]
-      },
-      "properties": {
-        "name": "SeaView Systems",
-        "website": "https://www.seaviewsystems.com/",
-        "address": "7275 Joy Rd, Ste A Dexter, MI 48130",
-        "phone": "+1 734 426 8978",
-        "email":"info@seaviewsystems.com"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [3.220410, 43.369440]
-      },
-      "properties": {
-        "name": "SAS ROV EXPERT",
-        "website": "https://rov-expert.fr/",
-        "address": "132 Rue Ps Marquis de Laplace 34500 Beziers France",
-        "phone": "",
-        "email":""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [22.502150, 60.392960]
-      },
-      "properties": {
-        "name": "Sub Marine Store Oy",
-        "website": "https://www.substore.fi/",
-        "address": "Luodontie 372 21500 Piikkiö, Finland",
-        "phone": "+358 40 576 6448",
-        "email":"info@substore.fi"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [140.841606, 38.3411227]
-      },
-      "properties": {
-        "name": "CHICK CO.,LTD",
-        "website": "https://www.rov-fun.com/",
-        "address": "4-2-342, Takamori, Izumiku, Sendaishi Miyagiken, Japan",
-        "phone": "",
-        "email":""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [45.1082654, -12.7888903]
-      },
-      "properties": {
-        "name": "DroneGo",
-        "website": "https://www.dronego.fr/",
-        "address": "21 rue Hamoirabou 97680 Tsingoni Mayotte",
-        "phone": "+262 639 03 86 98",
-        "email":"contact@dronego.fr"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [121.5636796, 25.0375198]
-      },
-      "properties": {
-        "name": "Future Oceans International Co., Ltd",
-        "website": "https://foibluerov.blogspot.com/",
-        "address": "13F., No. 47, Ln. 50, Songbo St., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
-        "phone": "",
-        "email":""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [103.8194992, 1.357107]
-      },
-      "properties": {
-        "name": "Aquabots Pte Ltd",
-        "website": "https://aqua-bots.com/",
-        "address": "13F., No. 47, Ln. 50, Songbo St., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
-        "phone": "+65 31583910",
-        "email":"hello@aqua-bots.com"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [31.067811, -29.732100]
-      },
-      "properties": {
-        "name": "ROV Africa",
-        "website": "https://rovafrica.com/",
-        "address": "Umhlanga, KwaZulu-Natal",
-        "phone": "(+27) 082 4815 153",
-        "email":"chris@rovafrica.com"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [6.000512, 43.244520]
-      },
-      "properties": {
-        "name": "SYERA",
-        "website": "http://syera.fr/boutique/fr/",
-        "address": "Syera, Quartier des Blétonèdes 83210 Belgentier",
-        "phone": "09 81 28 70 65 ( 10-12H )",
-        "email":"boutique@syera.fr"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [139.517339, 35.871481]
-      },
-      "properties": {
-          "name": "SIX VOICE, Inc.",
-          "website": "https://underwaterdrone.stores.jp/",
-          "address": "Yonenosoko #A2, 1440-5 Oimusashino, Fujimino-shi, Saitama, 356-0054, JAPAN",
-          "phone": "+81-49-293-8394",
-          "email": "hub@sixvoice.jp"
-      }
+[
+  {
+      "name": "SeaView Systems",
+      "website": "https://www.seaviewsystems.com/",
+      "address": "7275 Joy Rd, Ste A Dexter, MI 48130",
+      "phone": "+1 734 426 8978",
+      "email": "info@seaviewsystems.com",
+      "coordinates": [42.341390, -83.875450]
   },
   {
-    "type": "Feature",
-    "geometry": {
-        "type": "Point",
-        "coordinates": [-5.441030, 56.451260]
-    },
-    "properties": {
-        "name": "Tritonia Scientific Ltd",
-        "website": "https://tritonia.scot/",
-        "address": "Dunstaffnage Marine Laboratory, Dunbeg, Oban, PA37 1QA, Scotland, UK",
-        "phone": "+44(0)1631 559211",
-        "email": "info@tritoniascientific.co.uk"
-    }
-}
-
-  ]
-}
+      "name": "SAS ROV EXPERT",
+      "website": "https://rov-expert.fr/",
+      "address": "132 Rue Ps Marquis de Laplace 34500 Beziers France",
+      "phone": "",
+      "email": "",
+      "coordinates": [43.369440, 3.220410]
+  },
+  {
+      "name": "Sub Marine Store Oy",
+      "website": "https://www.substore.fi/",
+      "address": "Luodontie 372 21500 Piikkiö, Finland",
+      "phone": "+358 40 576 6448",
+      "email": "info@substore.fi",
+      "coordinates": [60.392960, 22.502150]
+  },
+  {
+      "name": "CHICK CO.,LTD",
+      "website": "https://www.rov-fun.com/",
+      "address": "4-2-342, Takamori, Izumiku, Sendaishi Miyagiken, Japan",
+      "phone": "",
+      "email": "",
+      "coordinates": [38.3411227, 140.841606]
+  },
+  {
+      "name": "DroneGo",
+      "website": "https://www.dronego.fr/",
+      "address": "21 rue Hamoirabou 97680 Tsingoni Mayotte",
+      "phone": "+262 639 03 86 98",
+      "email": "contact@dronego.fr",
+      "coordinates": [-12.7888903, 45.1082654]
+  },
+  {
+      "name": "Future Oceans International Co., Ltd",
+      "website": "https://foibluerov.blogspot.com/",
+      "address": "13F., No. 47, Ln. 50, Songbo St., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
+      "phone": "",
+      "email": "",
+      "coordinates": [25.0375198, 121.5636796]
+  },
+  {
+      "name": "Aquabots Pte Ltd",
+      "website": "https://aqua-bots.com/",
+      "address": "13F., No. 47, Ln. 50, Songbo St., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
+      "phone": "+65 31583910",
+      "email": "hello@aqua-bots.com",
+      "coordinates": [1.357107, 103.8194992]
+  },
+  {
+      "name": "ROV Africa",
+      "website": "https://rovafrica.com/",
+      "address": "Umhlanga, KwaZulu-Natal",
+      "phone": "(+27) 082 4815 153",
+      "email": "chris@rovafrica.com",
+      "coordinates": [-29.732100, 31.067811]
+  },
+  {
+      "name": "SYERA",
+      "website": "http://syera.fr/boutique/fr/",
+      "address": "Syera, Quartier des Blétonèdes 83210 Belgentier",
+      "phone": "09 81 28 70 65 ( 10-12H )",
+      "email": "boutique@syera.fr",
+      "coordinates": [43.244520, 6.000512]
+  },
+  {
+      "name": "SIX VOICE, Inc.",
+      "website": "https://underwaterdrone.stores.jp/",
+      "address": "Yonenosoko #A2, 1440-5 Oimusashino, Fujimino-shi, Saitama, 356-0054, JAPAN",
+      "phone": "+81-49-293-8394",
+      "email": "hub@sixvoice.jp",
+      "coordinates": [35.871481, 139.517339]
+  },
+  {
+      "name": "Tritonia Scientific Ltd",
+      "website": "https://tritonia.scot/",
+      "address": "Dunstaffnage Marine Laboratory, Dunbeg, Oban, PA37 1QA, Scotland, UK",
+      "phone": "+44(0)1631 559211",
+      "email": "info@tritoniascientific.co.uk",
+      "coordinates": [56.451260, -5.441030]
+  }
+]

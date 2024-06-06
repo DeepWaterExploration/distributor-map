@@ -11,8 +11,8 @@
       "name": "SAS ROV EXPERT",
       "website": "https://rov-expert.fr/",
       "address": "132 Rue Ps Marquis de Laplace 34500 Beziers France",
-      "phone": "",
-      "email": "",
+      "phone": "+33 (0) 685350150",
+      "email": "contact@rov-expert.fr",
       "coordinates": [43.369440, 3.220410]
   },
   {
@@ -27,8 +27,8 @@
       "name": "CHICK CO.,LTD",
       "website": "https://www.rov-fun.com/",
       "address": "4-2-342, Takamori, Izumiku, Sendaishi Miyagiken, Japan",
-      "phone": "",
-      "email": "",
+      "phone": "022-739-8861",
+      "email": "info@xd-fun.com",
       "coordinates": [38.3411227, 140.841606]
   },
   {
@@ -43,17 +43,17 @@
       "name": "Future Oceans International Co., Ltd",
       "website": "https://foibluerov.blogspot.com/",
       "address": "13F., No. 47, Ln. 50, Songbo St., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
-      "phone": "",
-      "email": "",
+      "phone": "+886 2 27580578",
+      "email": "foi.bluerov@gmail.com",
       "coordinates": [25.0375198, 121.5636796]
   },
   {
       "name": "Aquabots Pte Ltd",
       "website": "https://aqua-bots.com/",
-      "address": "13F., No. 47, Ln. 50, Songbo St., Banqiao Dist., New Taipei City 220, Taiwan (R.O.C.)",
+      "address": "19 Kim Keat Road, #02-12 Fu Tsu Building, Singapore, (328804)",
       "phone": "+65 31583910",
       "email": "hello@aqua-bots.com",
-      "coordinates": [1.357107, 103.8194992]
+      "coordinates": [1.325000, 103.853120]
   },
   {
       "name": "ROV Africa",

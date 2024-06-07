@@ -17,6 +17,7 @@ const ComponentResize = () => {
   return null;
 };
 
+
 function getCoordinates(): LatLngExpression {
   const coordinates = distributors.map((x) => x.coordinates);
   if (coordinates.length === 0) {
@@ -34,12 +35,12 @@ function getCoordinates(): LatLngExpression {
   const avgX = sumX / coordinates.length;
   const avgY = sumY / coordinates.length;
 
-  console.log(avgX, avgY);
   return [avgX, avgY] as LatLngExpression;
 }
 
 const HomePage: React.FC = () => {
-  const [mapCenter, _setMapCenter] = useState<LatLngExpression>(getCoordinates());
+  const [mapCenter, _setMapCenter] =
+    useState<LatLngExpression>(getCoordinates());
   const [zoom, _setZoom] = useState(2);
   const mapRef = useRef(null);
 
@@ -55,8 +56,8 @@ const HomePage: React.FC = () => {
       <MapContainer
         minZoom={2}
         maxBounds={[
-          [-180, -90],
-          [180, 90],
+          [-90, -180],
+          [90, 180],
         ]}
         center={mapCenter}
         zoom={zoom}
@@ -64,6 +65,7 @@ const HomePage: React.FC = () => {
         style={styles.mapContainer}
       >
         <ComponentResize />
+        {/* <BoundingSnap zoom={2} setter={(e)=>setBoundingBox(()=>e)}/> */}
         <TileLayer
           attribution="OpenStreetMap"
           url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png"

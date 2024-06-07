@@ -7,7 +7,7 @@ export const styles = {
   mapContainer: {
     minWidth: "350px",
     width: "100%",
-    maxWidth: "1500px",
+    maxWidth: "2000px",
 
     height: "calc(100% - ( 1px / 1000))", //Full screen minus a miniscule amount
 

@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
   const mapRef = useRef(null);
 
   const icon = new L.Icon({
-    iconUrl: "https://unpkg.com/leaflet@1.0.3/dist/images/marker-icon.png",
+    iconUrl: "https://cdn.shopify.com/s/files/1/0575/8785/9626/files/dwe-pin.png",
     iconSize: [25, 41],
     iconAnchor: [12, 41],
   }); // use custom icon, otherwise it doesn't show at build

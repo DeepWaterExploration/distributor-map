@@ -84,13 +84,13 @@ const HomePage: React.FC = () => {
           return (
             <Marker key={element.name} position={position} icon={icon}>
               <Popup>
-                <a href={element.website}>{element.name}</a>
+                <a target="_blank" rel="noopener noreferrer" href={element.website}>{element.name}</a>
                 <br />
                 {element.address}
                 {element.email !== "" ? (
                   <>
                     <br />
-                    <a href={"mailto:" + element.email}>{element.email}</a>
+                    <a target="_blank" rel="noopener noreferrer" href={"mailto:" + element.email}>{element.email}</a>
                   </>
                 ) : (
                   ""
@@ -98,7 +98,7 @@ const HomePage: React.FC = () => {
                 {element.phone !== "" ? (
                   <>
                     <br />
-                    <a href={"tel:" + element.phone}>{element.phone}</a>
+                    <a target="_blank" rel="noopener noreferrer" href={"tel:" + element.phone}>{element.phone}</a>
                   </>
                 ) : (
                   ""

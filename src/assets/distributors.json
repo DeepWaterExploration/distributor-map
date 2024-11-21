@@ -86,5 +86,13 @@
       "phone": "+44(0)1631 559211",
       "email": "info@tritoniascientific.co.uk",
       "coordinates": [56.451260, -5.441030]
+  },
+  {
+    "name": "SubseaLED",
+    "website": "https://subsealed.com/",
+    "address": "Via Marinara, 25, 48122 Marina di Ravenna RA, Italy",
+    "phone": "+39 0544 1766609",
+    "email": "info@subsealed.com",
+    "coordinates": [44.488910, 12.274430]
   }
 ]

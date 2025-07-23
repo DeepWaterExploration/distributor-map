@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
     <Box sx={styles.pageContainer}>
       {/* @ts-ignore */}
       <MapContainer
-        minZoom={2}
+        minZoom={2.5}
         maxBounds={[
           [-90, -180],
           [90, 180],

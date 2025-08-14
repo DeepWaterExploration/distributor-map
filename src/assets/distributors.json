@@ -141,5 +141,27 @@
             44.488910,
             12.274430
         ]
+    },
+    {
+        "name": "QSTAR Group",
+        "website": "https://www.qstar.eu/",
+        "address": "Port Forum, Carrer de La Pau, 12, 08930 Barcelona, Spain",
+        "phone": "+34 619 686 473",
+        "email": "info@qstar.es",
+        "coordinates": [
+            41.4123053,
+            2.2301443
+        ]
+    },
+    {
+        "name": "J. Bornhöft Industriegeräte GmbH",
+        "website": "https://bornhoeft.de/",
+        "address": "Wellseedamm 3, 24145 Kiel, Germany",
+        "phone": "+49-(0)431- 23 70 95-0",
+        "email": "info@bornhoeft.de",
+        "coordinates": [
+            54.2795974,
+            10.1466466
+        ]
     }
 ]

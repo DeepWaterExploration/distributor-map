@@ -1,5 +1,6 @@
 name: Deploy to GitHub Pages
 
+# Deploys on push to main
 on:
   push:
     branches: [ main ]

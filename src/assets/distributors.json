@@ -174,5 +174,16 @@
             33.8417319,
             -118.3353929
         ]
+    },
+    {
+        "name": "Banergy",
+        "website": "https://www.banergy.com/marine",
+        "address": "192B Sarat Bose Road, Kolkata, 700029, India",
+        "phone": "+919831537711",
+        "email": "banergyworld@gmail.com",
+        "coordinates": [
+            22.5152239,
+            88.3528061
+        ]
     }
 ]

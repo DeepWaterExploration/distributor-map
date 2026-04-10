@@ -185,5 +185,27 @@
             22.5152239,
             88.3528061
         ]
+    },
+    {
+        "name": "BORSYS",
+        "website": "https://www.borsys.kr/en/",
+        "address": "6F, 736, Taejong-ro, Yeongdo-gu, Busan, Korea",
+        "phone": "+82-51-403-3100",
+        "email": "contact@borsys.kr",
+        "coordinates": [
+            35.070432,
+            129.079348
+        ]
+    },
+    {
+        "name": "Buccaneer Marine",
+        "website": "https://buccaneermarine.com/",
+        "address": "Buccaneer House, 4 Union Rd, Macduff AB44 1UJ, United Kingdom",
+        "phone": "+441261835199",
+        "email": "info@buccaneermarine.com",
+        "coordinates": [
+            57.669278,
+            -2.502241
+        ]
     }
 ]

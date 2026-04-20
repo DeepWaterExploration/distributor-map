@@ -190,7 +190,7 @@
         "name": "BORSYS",
         "website": "https://www.borsys.kr/en/",
         "address": "6F, 736, Taejong-ro, Yeongdo-gu, Busan, Korea",
-        "phone": "+82-51-403-3100",
+        "phone": "+82514033100",
         "email": "contact@borsys.kr",
         "coordinates": [
             35.070432,
@@ -206,6 +206,17 @@
         "coordinates": [
             57.669278,
             -2.502241
+        ]
+    },
+    {
+        "name": "Deep Supplies",
+        "website": "https://deep.supplies/",
+        "address": "14 Beneficial Way, Wangara Western Australia 6065, Australia",
+        "phone": "+61 4 8800 5080",
+        "email": "sales@deep.supplies",
+        "coordinates": [
+            -31.796440,
+            115.838210
         ]
     }
 ]

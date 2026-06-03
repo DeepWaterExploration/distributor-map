@@ -73,6 +73,33 @@ export function DistributorMap({ distributors }: { distributors: Distributor[] }
     return index.getClusters(bbox, Math.round(zoom));
   }, [index, bbox, zoom]);
 
+  // After a popup opens, nudge the map so the card isn't clipped by the
+  // viewport edges. We measure the rendered popup (its height varies with how
+  // many fields the distributor has) and only pan when it actually overflows.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !selected) return;
+    const id = requestAnimationFrame(() => {
+      const container = map.getContainer();
+      const popupEl = container.querySelector('.maplibregl-popup');
+      if (!popupEl) return;
+      const c = container.getBoundingClientRect();
+      const p = popupEl.getBoundingClientRect();
+      const margin = 12;
+      let dx = 0;
+      let dy = 0;
+      if (p.left < c.left + margin) dx = c.left + margin - p.left;
+      else if (p.right > c.right - margin) dx = c.right - margin - p.right;
+      if (p.top < c.top + margin) dy = c.top + margin - p.top;
+      else if (p.bottom > c.bottom - margin) dy = c.bottom - margin - p.bottom;
+      if (dx === 0 && dy === 0) return;
+      // Shifting the popup by (dx, dy) on screen means panning the map center
+      // by the opposite amount.
+      map.panBy([-dx, -dy], { duration: 300 });
+    });
+    return () => cancelAnimationFrame(id);
+  }, [selected]);
+
   // Close the popup if its pin is no longer a standalone point (e.g. it merged
   // back into a cluster after zooming out).
   useEffect(() => {
@@ -92,6 +119,8 @@ export function DistributorMap({ distributors }: { distributors: Distributor[] }
       mapStyle={MAP_STYLE}
       style={{ width: '100%', height: '100%' }}
       minZoom={1}
+      attributionControl={{ compact:true }}
+      cooperativeGestures
       onLoad={syncView}
       onMove={syncView}
     >

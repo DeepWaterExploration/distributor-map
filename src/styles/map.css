@@ -1,0 +1,151 @@
+.maplibregl-map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Desaturate only the basemap tiles to a neutral monochrome look. The HTML
+   markers (pins, clusters) and the popup sit outside the canvas, so they keep
+   their colour. */
+.maplibregl-canvas {
+  filter: grayscale(1) brightness(0.85) contrast(1.05);
+}
+
+/* Single glowing accent pin */
+.pin {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border-radius: 50%;
+  background: #46bae7;
+  border: 2px solid #0b0b0d;
+  box-shadow: 0 0 0 3px rgba(70, 186, 231, 0.18),
+    0 0 14px 3px rgba(70, 186, 231, 0.55);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.pin:hover {
+  transform: scale(1.18);
+}
+
+/* Cluster count bubble */
+.cluster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  color: #eaf7fd;
+  font-weight: 600;
+  font-size: 13px;
+  background: rgba(70, 186, 231, 0.16);
+  border: 1.5px solid #46bae7;
+  box-shadow: 0 0 14px 2px rgba(70, 186, 231, 0.35);
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background 0.12s ease;
+}
+.cluster:hover {
+  background: rgba(70, 186, 231, 0.28);
+}
+
+/* Popup card — shadcn neutral (zinc) styling, overriding MapLibre's default
+   popup chrome. Surface zinc-900, border zinc-800, foreground zinc-50. */
+.maplibregl-popup.distributor-popup .maplibregl-popup-content {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+  color: #fafafa;
+}
+.maplibregl-popup.distributor-popup .maplibregl-popup-close-button {
+  color: #a1a1aa;
+  font-size: 18px;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+.maplibregl-popup.distributor-popup .maplibregl-popup-close-button:hover {
+  color: #fafafa;
+  background: #27272a;
+}
+.maplibregl-popup.distributor-popup.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+  border-top-color: #27272a;
+}
+.maplibregl-popup.distributor-popup.maplibregl-popup-anchor-top .maplibregl-popup-tip {
+  border-bottom-color: #27272a;
+}
+.maplibregl-popup.distributor-popup.maplibregl-popup-anchor-left .maplibregl-popup-tip {
+  border-right-color: #27272a;
+}
+.maplibregl-popup.distributor-popup.maplibregl-popup-anchor-right .maplibregl-popup-tip {
+  border-left-color: #27272a;
+}
+
+.card-title {
+  margin: 0 0 12px;
+  padding-right: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #fafafa;
+}
+.copy-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin: 0 0 2px;
+  padding: 7px 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #a1a1aa;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+.copy-row:hover {
+  background: #27272a;
+  color: #fafafa;
+}
+.copy-icon {
+  flex: 0 0 auto;
+  font-size: 13px;
+}
+.copy-text {
+  flex: 1 1 auto;
+  line-height: 1.35;
+  word-break: break-word;
+}
+.copy-flag {
+  flex: 0 0 auto;
+  font-size: 11px;
+  font-weight: 600;
+  color: #46bae7;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+.copy-row:hover .copy-flag {
+  opacity: 0.7;
+}
+.copy-flag.is-visible {
+  opacity: 1;
+}
+.card-website {
+  display: block;
+  margin-top: 12px;
+  padding: 9px;
+  border-radius: 8px;
+  background: #46bae7;
+  color: #08171d;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.12s ease;
+}
+.card-website:hover {
+  background: #5cc6ef;
+}

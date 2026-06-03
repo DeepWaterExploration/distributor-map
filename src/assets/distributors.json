@@ -218,5 +218,16 @@
             -31.796440,
             115.838210
         ]
+    },
+    {
+        "name": "NorthEast Ocean Supply",
+        "website": "https://www.northeastoceansystems.com/",
+        "address": "50 Sims Avenue, Providence, RI 02909, United States",
+        "phone": "+1 (401) 217-9754",
+        "email": "contact@northeastoceansystems.com",
+        "coordinates": [
+            41.826197,
+            -71.432665
+        ]
     }
 ]

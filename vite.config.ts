@@ -1,9 +1,30 @@
-import million from 'million/compiler';
-import react from "@vitejs/plugin-react";
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [million.vite({ auto: true, mute: true }), react()],
-  base: '/distributor-map/'
+  base: './',
+  plugins: [react()],
+  test: {
+    globals: true,
+    projects: [
+      {
+        test: {
+          name: 'node',
+          include: ['src/lib/__tests__/validateData.test.ts'],
+          environment: 'node',
+          globals: true,
+        },
+      },
+      {
+        test: {
+          name: 'jsdom',
+          include: ['src/**/__tests__/**/*.test.ts', 'src/**/__tests__/**/*.test.tsx'],
+          exclude: ['src/lib/__tests__/validateData.test.ts'],
+          environment: 'jsdom',
+          globals: true,
+        },
+      },
+    ],
+  },
 });

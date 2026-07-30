@@ -229,5 +229,16 @@
             41.826197,
             -71.432665
         ]
+    },
+    {
+        "name": "AXTEV Co., Ltd.",
+        "website": "https://www.axtev.com/",
+        "address": "80 Bansong-ro, Yeonje-gu, Busan, South Korea",
+        "phone": "+82-010-5237-6277",
+        "email": "jylee@axtev.com",
+        "coordinates": [
+            35.190428,
+            129.088348
+        ]
     }
 ]
